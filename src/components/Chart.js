@@ -27,6 +27,7 @@ function BarChart() {
         ],
       }}
       options={{
+        responsive: true,
         maintainAspectRatio: true,
 
         scales: {
@@ -35,6 +36,9 @@ function BarChart() {
             steps: 10,
             max: 100,
           },
+          x: {
+            barThickness: 1,
+          },
         },
 
         plugins: {
@@ -42,13 +46,22 @@ function BarChart() {
             annotations: [
               {
                 drawTime: "afterDraw",
-                id: "a-line-1", 
                 type: "line",
                 mode: "horizontal",
                 scaleID: "y",
                 value: "90",
                 borderColor: green[500],
                 borderWidth: 1.5,
+                label: {
+                    display: true,
+                    borderRadius: 0,
+                    padding: 2,
+                    backgroundColor: green[500],
+                    content: "Target ",
+                    position: "end",
+                    yAdjust: -10,
+
+                },
               },
             ],
           },

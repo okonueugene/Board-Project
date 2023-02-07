@@ -8,7 +8,7 @@ function Employee() {
           <div className="col-md-4">
             <img
               src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbennettknowsdotcom.files.wordpress.com%2F2013%2F09%2Fdrake-nothing-was-the-same.jpg%3Fw%3D549%26h%3D549&f=1&nofb=1&ipt=85d52d545002d04f185027947c131ede063e9995041927b85f42993f3477841b&ipo=images"
-              height="205px" 
+              height="205px" width="205px"
             />
           </div>
           <div className="col-md-8">

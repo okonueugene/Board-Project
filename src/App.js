@@ -6,17 +6,17 @@ import Employee from './components/Employee';
 function App() {
   return (
     <div style={{display: "flex",flexWrap: "wrap",height:"100vh",width:"100%"}}>
-<div style={{position: "relative", width: "33.33%", height: "auto", padding:"10px"}}><h4>Hello</h4><BarChart /></div>
-<div style={{position: "relative", width: "33.33%", height: "auto" , top:'6%', padding:"10px"}}><h4>Hello</h4><Action /></div>
-<div style={{position: "relative", width: "33.33%", height: "auto" ,top:'6%', padding:"10px"}}><h4>Hello</h4><Action/></div>
+<div style={{position: "relative", width: "33.33%", height: "auto", padding:"10px"}}><h4>DAILY LINE EFFICIENCY KPI</h4><BarChart /></div>
+<div style={{position: "relative", width: "33.33%", height: "auto" , top:'6%', padding:"10px"}}><h4>DAILY PACKET WATSTEAGE KPIS</h4><Action /></div>
+<div style={{position: "relative", width: "33.33%", height: "auto" ,top:'6%', padding:"10px"}}><h4>ACTION POINTS</h4><Action/></div>
 
-<div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px" }}><h4>Hello</h4><Action /></div>  
-<div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px"}}><h4>Hello</h4><Action /></div>  
-<div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px"}}><h4>Hello</h4><Action /></div> 
+<div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px" }}><h4>MONTHLY LINE EFFICIENCY KPIS</h4><Action /></div>  
+<div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px"}}><h4>MONTHLY PRODUCTION TIME KPIS</h4><Action /></div>  
+<div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px"}}><h4>MONTHLY CAPACITY UTILIZATION KPIS</h4><Action /></div> 
 
-<div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px"}}><h4>Hello</h4><Action></Action></div>  
-<div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px"}}><h4>Hello</h4><Action /></div>  
-<div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px"}}><h4>Hello</h4><Employee /></div>  
+<div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px"}}><h4>MONTHLY 3 MAIN DOWNTIME REASONS KPIS</h4><Action></Action></div>  
+<div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px"}}><h4>ACTION POINTS</h4><Action /></div>  
+<div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px"}}><h4>BEST EMPLOYEE OF THE MONTH</h4><Employee /></div>  
     </div>
   );
 }
