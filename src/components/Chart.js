@@ -1,9 +1,8 @@
 import React from "react";
 import { Chart as ChartJS, registerables } from "chart.js";
 import { Bar } from "react-chartjs-2";
-import { red, blue, green, purple, orange, yellow } from "@mui/material/colors";
+import { red, blue, green, teal, orange, yellow } from "@mui/material/colors";
 import annotationPlugin from "chartjs-plugin-annotation";
-// import { array } from './collector.js';
 
 ChartJS.register(...registerables, annotationPlugin);
 
@@ -43,7 +42,17 @@ function BarChart() {
         },
 
         plugins: {
-             
+            title: {
+                display: true,
+                text: new Date().toDateString(),
+                color: teal[500],
+                font: {
+                    size: 15,
+                    weight: "bold",
+                },
+            },
+            
+
           annotation: {
             annotations: [
               {

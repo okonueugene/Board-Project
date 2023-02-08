@@ -8,11 +8,7 @@
 }
 
 #root {
-  /* background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7iS4L90VlwLTEbIJvvu6MAHaE8%26pid%3DApi&f=1&ipt=951e6002986a168c54449c1997e4c692538d830db2710144894747cfc01700ba&ipo=images"); */
-  background-repeat: no-repeat;
-  background-size:600px 400px;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: #140e0e;
   
 }
 
@@ -29,6 +25,7 @@ h4{
   font-family: 'Arial';
   font-size: 22px;
   text-align: center;
+  color: aliceblue;
 }
 
 @media (prefers-reduced-motion: no-preference) {
