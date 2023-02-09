@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, Fragment, useEffect } from 'react';
 import { Chart as ChartJS, registerables } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import { red, blue, green, teal, orange, yellow } from "@mui/material/colors";
@@ -6,7 +6,29 @@ import annotationPlugin from "chartjs-plugin-annotation";
 
 ChartJS.register(...registerables, annotationPlugin);
 
+var mqtt    = require('mqtt');
+var options = {
+  protocol: 'mqtts',
+  clientId: 'b0908853' 	
+};
+var client  = mqtt.connect('mqtt://test.mosquitto.org:8081', options);
+
+client.subscribe('testing');
+
 function BarChart() {
+  var note;
+
+  const [mesg, setMesg] = useState(<Fragment><em>nothing heard</em></Fragment>);
+
+  useEffect(() => {
+    client.on('message', function (topic, message) {
+      note = message.toString();
+      setMesg(note);
+      console.log(note);
+    });
+  }, []);
+
+
   return (
     <Bar
       data={{
@@ -14,13 +36,13 @@ function BarChart() {
         datasets: [
           {
             label: "A3F",
-            data: [90, 70, 80],
+            data: [90, mesg, 80],
             backgroundColor: [blue[500]],
             borderWidth: 1,
           },
           {
             label: "TBA19",
-            data: [50, 40, 60],
+            data: [78, 80, 60],
             backgroundColor: [orange[500]],
             borderWidth: 1,
           },
@@ -78,7 +100,7 @@ function BarChart() {
           },
         },
       }}
-      redraw={true}
+      redraw={false}
     />
   );
 }
