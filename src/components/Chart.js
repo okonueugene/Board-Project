@@ -18,11 +18,11 @@ client.subscribe('testing');
 function BarChart() {
   var note;
 
-  const [mesg, setMesg] = useState(<Fragment><em>nothing heard</em></Fragment>);
+  const [mesg, setMesg] = useState(<Fragment><em>3</em></Fragment>);
 
   useEffect(() => {
     client.on('message', function (topic, message) {
-      note = message.toString();
+      note = message;
       setMesg(note);
       console.log(note);
     });
@@ -36,13 +36,13 @@ function BarChart() {
         datasets: [
           {
             label: "A3F",
-            data: [90, mesg, 80],
+            data: [mesg[0], mesg[1], mesg[2]],
             backgroundColor: [blue[500]],
             borderWidth: 1,
           },
           {
             label: "TBA19",
-            data: [78, 80, 60],
+            data: [mesg[3], mesg[4], mesg[5]],
             backgroundColor: [orange[500]],
             borderWidth: 1,
           },
