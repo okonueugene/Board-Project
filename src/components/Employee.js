@@ -15,7 +15,7 @@ function Employee() {
             <div className="card-body">
               <h5 className="card-title text-white bg-dark text-center">Employee Of The Month</h5>
              <ul>
-                <li className="list-group-item text-white bg-dark "><span>Name:</span>     <span className="float-right">Name</span></li>
+                <li className="list-group-item text-white bg-dark "><span>Name:</span> <span className= "text-center">Name</span></li>
                 <li className="list-group-item text-white bg-dark" >Shift: <span>Shift</span></li>
                 <li className="list-group-item text-white bg-dark">Section: <span>Section</span></li>
               </ul>
