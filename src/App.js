@@ -5,7 +5,7 @@ import Employee from './components/Employee';
 
 function App() {
   return (
-    <div style={{display: "flex",flexWrap: "wrap",height:"100vh",width:"100%"}}>
+    <div className='main'>
 <div style={{position: "relative", width: "33.33%", height: "auto", padding:"10px"}}><h4>DAILY LINE EFFICIENCY KPI</h4><BarChart /></div>
 <div style={{position: "relative", width: "33.33%", height: "auto" , top:'6.5%', padding:"10px"}}><h4>DAILY PACKET WATSTEAGE KPIS</h4><Action /></div>
 <div style={{position: "relative", width: "33.33%", height: "auto" ,top:'6.5%', padding:"10px"}}><h4>ACTION POINTS</h4><Action/></div>
@@ -22,3 +22,4 @@ function App() {
 }
 
 export default App;
+
