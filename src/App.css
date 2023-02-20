@@ -11,76 +11,57 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #050505;
-  
-  }
-
-@media screen and (max-width: 5824px) {
-  
-#root > div {
-
-height: 100vh;
-width: 100%;
-
 }
-
+#root > div > div:nth-child(9) > div > div > div.col-md-4 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#root > div > div:nth-child(9) > div > div > div.col-md-8 > div > ul > li:nth-child(1) > span:nth-child(2){
+  right: 0;
+}
+@media screen and (min-width: 1845px) {
+  #root > div {
+    height: 100vh;
+    width: 100%;
+  }
+  #root > div > div:nth-child(2) > div > div > div {
+    top: 40px;
+  }
+  #root > div > div:nth-child(3) > div > div > div {
+    top: 40px;
+  }
+  #root > div > div:nth-child(1) > h4 {
+    padding-bottom: 0;
+  }
 }
 
 .card.mb-3 {
-  height: 205px;
-
+  height: auto;
 }
-h5{
-  font-family: 'Times New Roman', Times, serif;
+h5 {
+  font-family: "Times New Roman", Times, serif;
   font-size: 20px;
 }
-h4{
-  font-family: 'Arial';
+h4 {
+  font-family: "Arial";
   font-size: 22px;
   text-align: center;
   color: aliceblue;
   padding: 3.33%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
   #root > div {
     height: 100%;
     width: 100%;
-   
   }
 
-h4{
-  font-size: large;
-}
-#root > div > div:nth-child(9) > div > div > div.col-md-4 > img {
-  width: 100%;
-  height: 100%;
-}  
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  h4 {
+    font-size: large;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  #root > div > div:nth-child(9) > div > div > div.col-md-4 > img {
+    width: 100%;
+    height: 100%;
   }
 }

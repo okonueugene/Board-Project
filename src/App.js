@@ -7,8 +7,8 @@ function App() {
   return (
     <div className='main'>
 <div style={{position: "relative", width: "33.33%", height: "auto", padding:"10px"}}><h4>DAILY LINE EFFICIENCY KPI</h4><BarChart /></div>
-<div style={{position: "relative", width: "33.33%", height: "auto" , top:'6.5%', padding:"10px"}}><h4>DAILY PACKET WATSTEAGE KPIS</h4><Action /></div>
-<div style={{position: "relative", width: "33.33%", height: "auto" ,top:'6.5%', padding:"10px"}}><h4>ACTION POINTS</h4><Action/></div>
+<div style={{position: "relative", width: "33.33%", height: "auto" , top:'15px%', padding:"10px"}}><h4>DAILY PACKET WATSTEAGE KPIS</h4><Action /></div>
+<div style={{position: "relative", width: "33.33%", height: "auto" ,top:'15px%', padding:"10px"}}><h4>ACTION POINTS</h4><Action/></div>
 
 <div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px" }}><h4>MONTHLY LINE EFFICIENCY KPIS</h4><Action /></div>  
 <div style={{position: "relative",width: "33.33%", height: "auto", padding:"10px"}}><h4>MONTHLY PRODUCTION TIME KPIS</h4><Action /></div>  
