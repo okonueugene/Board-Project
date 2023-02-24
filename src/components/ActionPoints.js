@@ -1,6 +1,6 @@
 import React from "react";
 
-function Action() {
+function ActionPonts() {
   return (
     <div className="row">
       <div className="col s12 m6">
@@ -20,4 +20,4 @@ function Action() {
   );
 }
 
-export default Action;
+export default ActionPonts;
