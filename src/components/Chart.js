@@ -15,7 +15,7 @@ var options = {
 };
 var client  = mqtt.connect('mqtt://test.mosquitto.org:8081', options);
 
-client.subscribe('dailylineefficiencykpi');
+client.subscribe("dailylineefficiencykpi");
 
 function BarChart() {
   var note;
@@ -24,6 +24,7 @@ function BarChart() {
 
   useEffect(() => {
     client.on('message', function (topic, message) {
+      console.log(message.toString());
       note = JSON.parse(message.toString()); // convert message to JSON
       setMesg([note[0], note[1], note[2], note[3], note[4], note[5], note[6], note[7]]);
     });
