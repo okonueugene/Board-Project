@@ -24,7 +24,8 @@ function BarChart() {
 
   useEffect(() => {
     client.on('message', function (topic, message) {
-      console.log(message.toString());
+      var text = JSON.stringify(topic);
+      console.log(text);
       note = JSON.parse(message.toString()); // convert message to JSON
       setMesg([note[0], note[1], note[2], note[3], note[4], note[5], note[6], note[7]]);
     });
